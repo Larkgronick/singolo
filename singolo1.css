@@ -1,0 +1,118 @@
+@font-face{
+    font-family: 'Lato-Light';
+    src: url('assets/Lato-Light.ttf');
+    font-family: 'Lato-Bold';
+    src: url('assets/Lato-Bold.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    
+    width: 1020px;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d303a;
+    height: 90px;
+}
+
+h1{
+    margin: 29px 0px 0px 40px;
+    font-family: Lato-Bold;
+    display: inline;
+    font-size: 24px;
+    color: white;
+}
+
+.star{
+    font-size: 25px;
+    color: #e36861;
+    
+}
+
+nav{
+    margin: 37px 40px 0px 0px;
+}
+
+nav h3{
+    font-family: Lato-Bold;
+    font-size: 11.7px;
+    display: inline;
+    color: white;
+}
+
+nav span{
+    color: #494e62;
+    margin-left: 9px;
+    margin-right: 9px;
+    vertical-align: 3px;
+}
+
+.header-line{
+    background-color: #323746;
+    height: 7px;
+    border: none;
+}
+/*MAIN*/
+.slider{
+    background-color: #f06c64;
+}
+.phones{
+    height: 592px;
+    width: 935px;
+    margin: auto;
+}
+button {
+    width: 20px;
+    height: 20px;
+    border: solid #ca4549;
+    border-width: 0px 5px 5px 0px;
+    border-radius: 4px 4px 4px 4px;
+    vertical-align: 214px;
+    padding: 3px;
+    background: none;
+  }
+
+  .arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    
+  }
+
+  .arrow-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
+  .iphone-vertical{
+    margin: 50px 93px 0px 46px;
+    box-shadow: 24px 24px 0px #ce5d56;
+    border-radius: 0px 30px 24px 22px;
+    
+  }
+
+  .iphone-horizontal{
+    vertical-align: 121px;
+    box-shadow: 24px 24px 0px #ce5d56;
+    border-radius: 0px 30px 24px 22px;
+    margin-right: 70px;
+    
+  }
+
+  .phones-line{
+    height: 7px;
+    background-color: #ea676b;
+    border: none;
+  }
+
+
+ 
