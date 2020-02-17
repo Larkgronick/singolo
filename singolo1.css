@@ -1,8 +1,7 @@
 @font-face{
-    font-family: 'Lato-Light';
-    src: url('assets/Lato-Light.ttf');
-    font-family: 'Lato-Bold';
-    src: url('assets/Lato-Bold.ttf');
+    font-family: 'Lato-Regular';
+    src: url('assets/Lato-Regular.ttf');
+
 }
 
 *{
@@ -10,88 +9,118 @@
     padding: 0;
 
 }
+
 body {
-    
     width: 1020px;
     margin: 0 auto;
+    font-family: Lato-Regular, sans-serif;
+
 }
 
 /*HEADER*/
 
 header{
+    height: 90px;
     display: flex;
     justify-content: space-between;
     background-color: #2d303a;
-    height: 90px;
+
 }
 
 h1{
     margin: 29px 0px 0px 40px;
-    font-family: Lato-Bold;
     display: inline;
     font-size: 24px;
     color: white;
+
 }
 
 .star{
     font-size: 25px;
-    color: #e36861;
-    
+    color: #e36861; 
+
 }
 
 nav{
-    margin: 37px 40px 0px 0px;
+    margin: 37px 43px 0px 0px;
+
 }
 
-nav h3{
-    font-family: Lato-Bold;
-    font-size: 11.7px;
+nav a{
     display: inline;
+    font-size: 11.7px;
     color: white;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    color: #e36861;
+
 }
 
 nav span{
-    color: #494e62;
     margin-left: 9px;
     margin-right: 9px;
     vertical-align: 3px;
+    color: #494e62;
+
 }
 
 .header-line{
     background-color: #323746;
     height: 7px;
     border: none;
+
 }
-/*MAIN*/
+
+/*SLIDER*/
+
 .slider{
     background-color: #f06c64;
+
 }
+
 .phones{
+    margin: auto;
     height: 592px;
     width: 935px;
-    margin: auto;
+    
 }
+
 button {
     width: 20px;
     height: 20px;
+    vertical-align: 214px;
     border: solid #ca4549;
     border-width: 0px 5px 5px 0px;
     border-radius: 4px 4px 4px 4px;
-    vertical-align: 214px;
     padding: 3px;
     background: none;
-  }
+    
+}
 
   .arrow-right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-    
-  }
+
+}
+
+  .arrow-right:hover {
+    -webkit-box-shadow: -4px -4px #ca4549 inset;
+
+}
 
   .arrow-left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
-  }
+
+}
+
+  .arrow-left:hover {
+    -webkit-box-shadow: -4px -4px #ca4549 inset;
+
+}
   
   .iphone-vertical{
     margin: 50px 93px 0px 46px;
@@ -112,7 +141,64 @@ button {
     height: 7px;
     background-color: #ea676b;
     border: none;
+
   }
 
+  /*SERVICES*/
+
+  #services{
+    height: 497px;
+    background-color: #f2f2f2;
+    color:#666d89;
+
+  }
+
+  .description{
+    padding: 57px 0px 0px 40px;;
+    width: 939px;
+
+  }
+
+  .description h3{
+    font-size: 31px;
+    font-weight: bolder;
+
+  }
+
+  .description p{
+    font-size: 17.59px;
+    line-height: 1.7;
+    margin: 18px 0px 44px 0px;
+
+  }
+
+  .advantages{
+    display: flex;
+    margin-left: 20px;
+    
+  }
+
+  article{
+    display: inline-block;
+    align-self: left;
+    margin: 0px 0px 20px 20px;
+    width: 300px;
+
+  }
+
+  article img{
+    float: left;
+    padding: 5px 21px 20px 0px;
+
+  }
+
+  article p{
+    text-align: justify;
+    margin: 11px 0px 30px 0px;
+    width: 295px;
+    font-size: 11.5px;
+    line-height: 1.78;
+    
+  }
 
  
