@@ -81,6 +81,10 @@ nav span{
 
 }
 
+.slider h2{
+  display: none;
+}
+
 .phones{
     margin: auto;
     height: 592px;
@@ -102,23 +106,21 @@ button {
 
   .arrow-right {
     transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
 
 }
 
   .arrow-right:hover {
-    -webkit-box-shadow: -4px -4px #ca4549 inset;
+    box-shadow: -4px -4px #ca4549 inset;
 
 }
 
   .arrow-left {
     transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
 
 }
 
   .arrow-left:hover {
-    -webkit-box-shadow: -4px -4px #ca4549 inset;
+    box-shadow: -4px -4px #ca4549 inset;
 
 }
   
@@ -180,7 +182,6 @@ button {
 
   article{
     display: inline-block;
-    align-self: left;
     margin: 0px 0px 20px 20px;
     width: 300px;
 
