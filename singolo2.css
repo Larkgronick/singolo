@@ -1,83 +1,83 @@
 @font-face{
-    font-family: 'Lato-Regular';
-    src: url('assets/Lato-Regular.ttf');
+  font-family: 'Lato-Regular';
+  src: url('assets/Lato-Regular.ttf');
 
 }
 
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
 }
 
 body {
-    width: 1020px;
-    margin: 0 auto;
-    font-family: Lato-Regular, sans-serif;
+  width: 1020px;
+  margin: 0 auto;
+  font-family: Lato-Regular, sans-serif;
 
 }
 
 /*HEADER*/
 
 header{
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #2d303a;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d303a;
 
 }
 
 h1{
-    margin: 29px 0px 0px 40px;
-    display: inline;
-    font-size: 24px;
-    color: white;
+  margin: 29px 0px 0px 40px;
+  display: inline;
+  font-size: 24px;
+  color: white;
 
 }
 
 .star{
-    font-size: 25px;
-    color: #e36861; 
+  font-size: 25px;
+  color: #e36861; 
 
 }
 
 nav{
-    margin: 37px 43px 0px 0px;
+  margin: 37px 43px 0px 0px;
 
 }
 
 nav a{
-    display: inline;
-    font-size: 11.7px;
-    color: white;
-    text-decoration: none;
+  display: inline;
+  font-size: 11.7px;
+  color: white;
+  text-decoration: none;
 
 }
 
 nav a:hover{
-    color: #e36861;
+  color: #e36861;
 
 }
 
 nav span{
-    margin-left: 9px;
-    margin-right: 9px;
-    vertical-align: 3px;
-    color: #494e62;
+  margin-left: 9px;
+  margin-right: 9px;
+  vertical-align: 3px;
+  color: #494e62;
 
 }
 
 .header-line{
-    background-color: #323746;
-    height: 7px;
-    border: none;
+  background-color: #323746;
+  height: 7px;
+  border: none;
 
 }
 
 /*SLIDER*/
 
 .slider{
-    background-color: #f06c64;
+  background-color: #f06c64;
 
 }
 
@@ -86,163 +86,251 @@ nav span{
 }
 
 .phones{
-    margin: auto;
-    height: 592px;
-    width: 935px;
+  margin: auto;
+  height: 592px;
+  width: 935px;
     
 }
 
 .arrow-right, .arrow-left {
-    width: 20px;
-    height: 20px;
-    vertical-align: 214px;
-    border: solid #ca4549;
-    border-width: 0px 5px 5px 0px;
-    border-radius: 4px 4px 4px 4px;
-    padding: 3px;
-    background: none;
+  width: 20px;
+  height: 20px;
+  vertical-align: 214px;
+  border: solid #ca4549;
+  border-width: 0px 5px 5px 0px;
+  border-radius: 4px 4px 4px 4px;
+  padding: 3px;
+  background: none;
     
 }
 
-  .arrow-right {
-    transform: rotate(-45deg);
+.arrow-right {
+  transform: rotate(-45deg);
 
 }
 
-  .arrow-right:hover {
-    box-shadow: -4px -4px #ca4549 inset;
+.arrow-right:hover {
+  box-shadow: -4px -4px #ca4549 inset;
 
 }
 
-  .arrow-left {
-    transform: rotate(135deg);
+.arrow-left {
+  transform: rotate(135deg);
 
 }
 
-  .arrow-left:hover {
-    box-shadow: -4px -4px #ca4549 inset;
+.arrow-left:hover {
+  box-shadow: -4px -4px #ca4549 inset;
 
 }
   
-  .iphone-vertical{
-    margin: 50px 93px 0px 46px;
-    box-shadow: 24px 24px 0px #ce5d56;
-    border-radius: 0px 30px 24px 22px;
-    
+.iphone-vertical{
+  margin: 50px 93px 0px 46px;
+  box-shadow: 24px 24px 0px #ce5d56;
+  border-radius: 0px 30px 24px 22px;
+  
+}
+.iphone-horizontal{
+  vertical-align: 121px;
+  box-shadow: 24px 24px 0px #ce5d56;
+  border-radius: 0px 30px 24px 22px;
+  margin-right: 70px;
+  
+}
+
+.phones-line{
+  height: 7px;
+  background-color: #ea676b;
+  border: none;
+
+}
+
+/*SERVICES*/
+
+#services{
+  height: 497px;
+  color:#666d89;
+  background-color: #f2f2f2;
+
+}
+
+.description{
+  width: 939px;
+  padding: 57px 0px 0px 40px;
+
+}
+
+.description h3{
+  font-size: 31px;
+  font-weight: bolder;
+
+}
+
+.description p{
+  margin: 18px 0px 44px 0px;
+  font-size: 17.59px;
+  line-height: 1.7;
+
+}
+
+.advantages{
+  display: flex;
+  margin-left: 20px;
+  
+}
+
+article{
+  display: inline-block;
+  width: 300px;
+  margin: 0px 0px 20px 20px;
+
+}
+
+article img{
+  float: left;
+  padding: 5px 21px 20px 0px;
+
+}
+
+article p{
+  text-align: justify;
+  margin: 11px 0px 30px 0px;
+  width: 295px;
+  font-size: 11.5px;
+  line-height: 1.78;
+  
+}
+
+ /*PORTFOLIO*/
+
+ #portfolio{
+  height: 863px;
+  padding-left: 41px;  
+  color: #666d89;
+  background-color: #2d303a;
+
+ }
+
+ #portfolio h3{
+   font-size: 32px;
+   padding: 58px 0px 22px 0px;
+
+ }
+
+ #portfolio p{
+   font-size: 17px;
+   padding: 0px 15px 14px 0px; 
+
+ }
+
+ #portfolio button{
+  padding: 3px 6px 3px 6px;
+  margin: 0px 5px 5px 0px;
+  border: solid #666d89;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 4px 4px 4px 4px;
+  font-size: 12px;
+  color: #666d89;
+  background: none;
+
+ }
+
+ #portfolio button:hover{
+   color: white;
+   border-color: white;
+
+ }   
+ 
+ .gallery{
+   height: 616px;
+   overflow: hidden;
+
+ }
+
+ .gallery img{
+   padding: 16px 16px 0px 0px;
+
+ }
+
+ .portfolio-line{
+  height: 7px;
+  background-color: #323746;
+  border: none;
+
+ }
+
+ /*ABOUT US*/
+
+ #about{
+  height: 729px;
+  padding-left: 41px; 
+  color: #666d89;
+  background-color: #f2f2f2;
+
+ }
+
+ #about h3{
+  padding: 59px 0px 0px 0px; 
+  font-size: 30px;
+  font-weight: bold;
+
+ }
+
+ .description-about{
+  padding: 21px 0px 44px 0px;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  line-height: 29px;
+
+ }
+
+ .employees{
+   display: flex;
+
+ }
+
+ figure{
+   width: 303px;
+   margin-right: 16px;
+
+ }
+
+ figcaption h2{
+   padding: 12px 0px 11px 0px;
+   font-size: 18px;
+
+ } 
+
+ figcaption p{
+  margin-bottom: 25px;
+  font-size: 11.8px;
+  text-align: left;
+  line-height: 19px;
+
+} 
+
+ figcaption a{
+  margin-right: 4px;
+
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
   }
-
-  .iphone-horizontal{
-    vertical-align: 121px;
-    box-shadow: 24px 24px 0px #ce5d56;
-    border-radius: 0px 30px 24px 22px;
-    margin-right: 70px;
-    
+  100% {
+    transform: scale(1);
   }
+}
 
-  .phones-line{
-    height: 7px;
-    background-color: #ea676b;
-    border: none;
+figcaption img:hover{
+  animation: scale-up 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
-  }
+}
 
-  /*SERVICES*/
-
-  #services{
-    height: 497px;
-    background-color: #f2f2f2;
-    color:#666d89;
-
-  }
-
-  .description{
-    padding: 57px 0px 0px 40px;;
-    width: 939px;
-
-  }
-
-  .description h3{
-    font-size: 31px;
-    font-weight: bolder;
-
-  }
-
-  .description p{
-    font-size: 17.59px;
-    line-height: 1.7;
-    margin: 18px 0px 44px 0px;
-
-  }
-
-  .advantages{
-    display: flex;
-    margin-left: 20px;
-    
-  }
-
-  article{
-    display: inline-block;
-    margin: 0px 0px 20px 20px;
-    width: 300px;
-
-  }
-
-  article img{
-    float: left;
-    padding: 5px 21px 20px 0px;
-
-  }
-
-  article p{
-    text-align: justify;
-    margin: 11px 0px 30px 0px;
-    width: 295px;
-    font-size: 11.5px;
-    line-height: 1.78;
-    
-  }
-
-   /*PORTFOLIO*/
-
-   #portfolio{
-    height: 870px;
-    padding-left: 41px;  
-    color: #666d89;
-    background-color: #2d303a;
-
-   }
-
-   #portfolio h3{
-     font-size: 32px;
-     padding: 58px 0px 22px 0px; 
-   }
-
-   #portfolio p{
-     font-size: 17px;
-     padding: 0px 15px 14px 0px; 
-   }
-   #portfolio button{
-    padding: 3px 6px 3px 6px;
-    margin: 0px 5px 5px 0px;
-    border: solid #666d89;
-    border-width: 1px 1px 1px 1px;
-    border-radius: 4px 4px 4px 4px;
-    font-size: 12px;
-    color: #666d89;
-    background: none;
-   }
-
-   #portfolio button:hover{
-     color: white;
-     border-color: white;
-   }   
-   
-   .gallery{
-     height: 616px;
-     overflow: hidden;
-
-   }
-
-   .gallery img{
-     padding: 16px 16px 0px 0px;
-   }
+.about-line{
+  height: 7px;
+  background-color: white;
+  border: none;
+  
+}
