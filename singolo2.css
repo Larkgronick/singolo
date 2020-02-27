@@ -92,7 +92,7 @@ nav span{
     
 }
 
-button {
+.arrow-right, .arrow-left {
     width: 20px;
     height: 20px;
     vertical-align: 214px;
@@ -202,4 +202,47 @@ button {
     
   }
 
- 
+   /*PORTFOLIO*/
+
+   #portfolio{
+    height: 870px;
+    padding-left: 41px;  
+    color: #666d89;
+    background-color: #2d303a;
+
+   }
+
+   #portfolio h3{
+     font-size: 32px;
+     padding: 58px 0px 22px 0px; 
+   }
+
+   #portfolio p{
+     font-size: 17px;
+     padding: 0px 15px 14px 0px; 
+   }
+   #portfolio button{
+    padding: 3px 6px 3px 6px;
+    margin: 0px 5px 5px 0px;
+    border: solid #666d89;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 12px;
+    color: #666d89;
+    background: none;
+   }
+
+   #portfolio button:hover{
+     color: white;
+     border-color: white;
+   }   
+   
+   .gallery{
+     height: 616px;
+     overflow: hidden;
+
+   }
+
+   .gallery img{
+     padding: 16px 16px 0px 0px;
+   }
