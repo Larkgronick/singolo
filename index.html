@@ -9,8 +9,8 @@
 <body>
     <header id="home">
         <h1>SINGOLO<span class="star">*</span></h1>
-        <nav>
-            <a href="#home">HOME</a>
+        <nav id="navigation">
+            <a href="#home" class="active">HOME</a>
             <span>.</span>
             <a href="#services">SERVICES</a>
             <span>.</span>
@@ -25,11 +25,26 @@
     <main>
         <section class="slider">
             <h2>Slider</h2>
-            <div class="phones">
-                <button class="arrow-left"></button>
-                <img src="assets/iphone-vertical.png" class="iphone-vertical" alt="iphone-vertical">
-                <img src="assets/iphone-horizontal.png" class="iphone-horizontal" alt="iphone-horizontal">
-                <button class="arrow-right"></button>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <div id="lastClone"><img id="slide-2" src="assets/slide-2.png" alt="slide-2"></div>
+                    <div class="phones" >
+                        <img src="assets/iphone-vertical.png" id="iphone-vertical" alt="iphone-vertical" onclick="blackScreenVertical()" >
+                        <img src="assets/iphone-vertical-black.png" class="iphone-vertical-black" alt="iphone-vertical-black" onclick="normalScreenVertical()">
+                        <img src="assets/iphone-horizontal.png" id="iphone-horizontal" alt="iphone-horizontal" onclick="blackScreenHorizontal()">
+                        <img src="assets/iphone-horizontal-black.png" class="iphone-horizontal-black" alt="iphone-horizontal-black" onclick="normalScreenHorizontal()"> 
+
+                    </div>
+                    <div><img id="slide-2" src="assets/slide-2.png" alt="slide-2"></div>
+                    <div id="firstClone" class="phones" >
+                        <img src="assets/iphone-vertical.png" id="iphone-vertical" alt="iphone-vertical" onclick="blackScreenVertical()" >
+                        <img src="assets/iphone-vertical-black.png" class="iphone-vertical-black" alt="iphone-vertical-black" onclick="normalScreenVertical()">
+                        <img src="assets/iphone-horizontal.png" id="iphone-horizontal" alt="iphone-horizontal" onclick="blackScreenHorizontal()">
+                        <img src="assets/iphone-horizontal-black.png" class="iphone-horizontal-black" alt="iphone-horizontal-black" onclick="normalScreenHorizontal()"> 
+                    </div>
+                </div>
+                <button id="move-left" class="arrow-left"></button>
+                <button id="move-right" class="arrow-right"></button>
             </div>
         </section>
         <hr class="phones-line">
@@ -68,13 +83,13 @@
     <section id="portfolio">
         <h3>Portfolio</h3>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        <div class="design-select">
-            <button>All</button>
-            <button>Web Design</button>
-            <button>Graphic Design</button>
-            <button>Artwork</button>
+        <div id="design-select">
+            <button class="design-active">All</button>
+            <button class="">Web Design</button>
+            <button class="">Graphic Design</button>
+            <button class="">Artwork</button>
         </div>
-        <div class="gallery">
+        <div id="gallery">
             <img src="assets/ship.png" alt="ship">
             <img src="assets/girl.png" alt="girl">
             <img src="assets/cosmic-city.png" alt="cosmic-city">
@@ -133,14 +148,28 @@
     <section id="contact">
         <h3>Get a Quote</h3>
         <p class="contact-description ">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        <div>
-            <form action="handler.php">
-                <input type="text" name="Name" placeholder="Name (Required)" required>
-                <input type="text" name="Email" placeholder="Email (Required)" required>
-                <input type="text" name="Subject" placeholder="Subject">
-                <textarea id="describe" name="Describe" placeholder="Describe your project in detail..."></textarea>
-                <button type="submit">SEND</button>
+        <div class="feedback">
+            <form id="form">
+                <input id="name" type="text" name="Name" placeholder="Name (Required)" required>
+                <input id="email" type="text" name="Email" placeholder="Email (Required)" required>
+                <input id="subject" type="text" name="Subject" placeholder="Subject" > 
+                <textarea id="describe" name="Describe" placeholder="Describe your project in detail..." ></textarea>
+                <p id="error-message">Заполните требуемые поля</p>
+                <button id="submit-button">SEND</button>
             </form>
+            <div id="message-block" class="hidden">
+                <div id="message">
+                    <br>
+                    <p>Письмо отправлено</p>
+                    <br>
+                    <span id="topic"></span>
+                    <br>
+                    <br>
+                    <span id="result"></span>
+                    <br>
+                    <button id="close-button">ОК</button>
+                </div>
+            </div>
             <aside  class="contactdata">
                 <h4>Contact Information</h4>
                 <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
@@ -170,5 +199,6 @@
         </span>
     </footer>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
