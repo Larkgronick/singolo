@@ -140,6 +140,7 @@ MESSAGE_DEACTIVATION .addEventListener('click', ()=> {
         document.getElementById('topic').innerText = '';
         document.getElementById('result').innerText = '';
         document.getElementById('message-block').classList.add('hidden');
+        document.getElementById("form").reset();
 
 });
 
