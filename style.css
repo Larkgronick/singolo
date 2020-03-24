@@ -3,6 +3,7 @@
   src: url('assets/Lato-Regular.ttf');
 
 }
+
 *{
   margin: 0;
   padding: 0;
@@ -94,7 +95,6 @@ nav span{
 /*SLIDER*/
 
 .slider{
-  display: flex;
   height: 591px;
 
 }
@@ -117,6 +117,14 @@ nav span{
 
 }
 
+#slide-2{
+  width: 1020px;
+  height: 591px;
+  background: url("assets/slide-2.png");
+}
+
+
+
 #move-left{
   position: relative;
   z-index: 2;
@@ -129,16 +137,15 @@ nav span{
   
 }
 
-
 .phones{
-  margin: 26px 0px 0px 111px;
-  width: 100%;
+  width: 1020px;
 
 }
 
 #iphone-vertical{
   position: relative;
-  top: 27px;
+  top: 50px;
+  left: 111px;
   box-shadow: 24px 24px 0px #ce5d56;
   border-radius: 0px 30px 24px 22px;
   z-index: 2;
@@ -147,17 +154,16 @@ nav span{
 
 .iphone-vertical-black{
   position: relative;
-  top: 27px;
-  right: 219px;
+  top: 50px;
+  right: 108px;
   z-index: 1;
 
 }
 
 #iphone-horizontal{
   position: relative;
-  margin-right: 451px; 
-  left: 314px;
-  bottom: 315px;
+  right: 13px;
+  bottom: 70px;
   box-shadow: 24px 24px 0px #ce5d56;
   border-radius: 0px 30px 24px 22px;
   z-index: 2;
@@ -166,15 +172,16 @@ nav span{
 
 .iphone-horizontal-black{
   position: relative;
-  bottom: 533px;
-  left: 314px;
+  bottom: 288px;
+  left: 425px;
   z-index: 1;
 }
+
+
 
 .arrow-right, .arrow-left {
   width: 20px;
   height: 20px;
-  bottom: 643px;
   border: solid #ca4549;
   border-width: 0px 5px 5px 0px;
   border-radius: 4px 4px 4px 4px;
@@ -185,6 +192,7 @@ nav span{
 
 .arrow-right {
   left: 933px;
+  bottom: 400px;
   transform: rotate(-45deg);
 
 }
@@ -195,7 +203,8 @@ nav span{
 }
 
 .arrow-left {
-  left: 44px;
+  left: 45px;
+  bottom: 400px;
   transform: rotate(135deg);
 
 }
@@ -242,14 +251,44 @@ nav span{
 
 .advantages{
   display: flex;
+  flex-wrap: wrap;
   margin-left: 20px;
   
+}
+
+.advantages > article:nth-child(1) {
+  order: 1;
+
+}
+
+.advantages > article:nth-child(2) {
+  order: 4;
+
+}
+
+.advantages > article:nth-child(3) {
+  order: 2;
+}
+
+.advantages > article:nth-child(4) {
+  order: 5;
+
+}
+
+.advantages > article:nth-child(5) {
+  order: 3;
+
+}
+
+.advantages > article:nth-child(6) {
+  order: 6;
+
 }
 
 article{
   display: inline-block;
   width: 300px;
-  margin: 0px 0px 20px 20px;
+  margin-right: 20px;
 
 }
 
@@ -554,6 +593,11 @@ aside p{
 
 }
 
+.no-wrap{
+  display: none;
+
+}
+
 aside figure{
   float: left;
   margin-bottom: 3px;
@@ -619,3 +663,309 @@ footer{
 }
 
 
+/*TABLET*/
+
+@media screen and (max-width: 768px) {
+  body{
+    width: 768px;
+
+  }
+  
+  /*HEADER*/
+
+  header{
+    height: 88px;
+  }
+  
+  nav{
+    margin: 32px 39px 0px 0px;
+  
+  }
+  nav span{
+    margin-left: 10px;
+    margin-right: 10px;
+  
+  }
+  
+  /*SLIDER*/
+
+  .slider{
+    height: 443px;
+  }
+
+  .carousel-slide div {
+    height: 423px;
+  }
+
+  #slide-2{
+    background: url("assets/slide-2-tablet.png");
+
+  }
+
+  .arrow-right{ 
+    bottom: 211px;
+    left: 695px;
+  
+  }
+
+  .arrow-left{
+    bottom: 211px;
+    left: 32px;
+
+  }
+
+
+  #iphone-vertical{
+    width: 162.36px;
+    height: 344.26px;
+    top: 41px;
+    left: 81px;
+    box-shadow: 19px 19px 0px #ce5d56;
+    border-radius: 0px 28px 24px 22px;
+    
+  }
+  
+  .iphone-vertical-black{
+    width: 162.36px;
+    height: 344.26px;
+    top: 41px;
+    right: 86px;
+
+  }
+  
+  #iphone-horizontal{
+    width: 344.26px;
+    height: 162.36px;
+    right: 13px;
+    bottom: 50px;
+    box-shadow: 19px 19px 0px #ce5d56;
+    border-radius: 0px 28px 24px 22px;
+    
+  }
+  
+  .iphone-horizontal-black{
+    width: 344.26px;
+    height: 162.36px;
+    bottom: 216px;
+    left: 320px;
+  }
+
+  /*SERVICES*/
+
+  #services{
+
+    height: 677px;
+
+  }
+  
+  .description{
+    width: 687px ;
+    padding: 40px 0px 0px 40px;
+  
+  }
+
+  .description p{
+    font-size: 17.71px;
+    margin-bottom: 33.1px;
+  
+  }
+
+  article{
+    margin: 0px 33px  21px 21px;
+ 
+  
+  }
+  
+   /*PORTFOLIO*/
+
+  #portfolio{
+    height: 1093px;
+  
+  }
+  
+  #portfolio h3{ 
+    font-size: 31px;
+    padding-bottom: 18px;
+
+   }
+  
+   #portfolio p{
+    width: 660px;
+    letter-spacing: 0.3px;
+    line-height: 30px;
+    padding-bottom: 9px; 
+  
+   }
+  
+  #design-select button{
+    margin-bottom: 10px;
+    font-size: 11.9px;
+
+  
+  }
+  
+  .gallery{
+    height: 616px;
+    overflow: hidden;
+  
+  }
+  
+  .click{
+    width: 206px !important;
+  
+  }
+
+   
+  #gallery img{
+    width: 215px;
+    padding-bottom: 1px;
+  
+  }
+
+   /*ABOUT US*/
+   
+   #about{
+    height: 662px;
+  
+  }
+  
+  #about h3{
+    padding-top: 52px; 
+
+  }
+  
+  .description-about{
+    padding-bottom: 39px;
+    width: 680px;
+ 
+  }
+
+  figure{
+    width: 218px;
+
+  }
+
+  .adam-jensen, .desmond-miles, .scolara-visari{
+    width: 219px;
+    height:  219px;
+  
+  }
+  
+  figcaption h2{
+    padding: 7px 0px 3px 0px;
+  
+  } 
+  
+  figcaption p{
+    width: 219px;
+    margin-bottom: 12px;
+    text-align: justify;
+    line-height: 21px;
+  
+  } 
+  
+  /*CONTACT*/
+
+  #contact{
+    height: 626px;
+  
+  }
+  
+  #contact h3{
+    padding-top: 55px;
+    letter-spacing: 0.4px;
+  
+  }
+  
+  .contact-description{
+    width: 680px;
+    padding: 20px 0px 22px 0px;
+    font-size: 17px;
+    letter-spacing: 0.32px;
+    line-height: 30px;
+  
+  }
+
+  form{
+    width: 555px;
+
+  }
+  
+  input, textarea{
+    width: 434px;
+    margin-bottom: 12px;
+    padding-left: 7px;
+
+  }
+  
+  textarea{
+    height: 150px;
+    padding-top: 8px;
+    
+  }
+  
+  
+  #contact button{
+    margin-left: 350px;
+  
+  }
+  
+  #message{
+    left: 15%;
+
+  }
+  
+ 
+  .no-wrap{
+    display: block;
+    
+  }
+
+  .wrap{
+    display: none;
+    
+  }
+
+  aside{
+    margin: 0px;
+
+  }
+
+  aside h4{
+    font-size: 18.3px;
+    margin-bottom: 0px;
+
+  }
+
+
+  aside p{
+    width: 218px;
+    text-align: justify;
+    line-height: 22px;
+    margin: 0px 0px 10px 0px;
+  
+  }
+
+
+  aside figcaption{
+    padding-left: 7px;
+
+  }
+ 
+    /*FOOTER*/
+
+  .copyright{
+    margin: 31px 0px 0px 40px;
+    font-size: 13px;
+      
+  }
+  
+  .socials{
+    margin: 20px 40px 0px 40px;
+  
+  }
+  
+  
+
+
+}

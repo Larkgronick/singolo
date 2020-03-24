@@ -27,20 +27,27 @@
             <h2>Slider</h2>
             <div class="carousel-container">
                 <div class="carousel-slide">
-                    <div id="lastClone"><img id="slide-2" src="assets/slide-2.png" alt="slide-2"></div>
-                    <div class="phones" >
-                        <img src="assets/iphone-vertical.png" id="iphone-vertical" alt="iphone-vertical" onclick="blackScreenVertical()" >
-                        <img src="assets/iphone-vertical-black.png" class="iphone-vertical-black" alt="iphone-vertical-black" onclick="normalScreenVertical()">
-                        <img src="assets/iphone-horizontal.png" id="iphone-horizontal" alt="iphone-horizontal" onclick="blackScreenHorizontal()">
-                        <img src="assets/iphone-horizontal-black.png" class="iphone-horizontal-black" alt="iphone-horizontal-black" onclick="normalScreenHorizontal()"> 
-
+                    <div id="lastClone">
+                        <section id="slide-2"></section>
                     </div>
-                    <div><img id="slide-2" src="assets/slide-2.png" alt="slide-2"></div>
-                    <div id="firstClone" class="phones" >
-                        <img src="assets/iphone-vertical.png" id="iphone-vertical" alt="iphone-vertical" onclick="blackScreenVertical()" >
-                        <img src="assets/iphone-vertical-black.png" class="iphone-vertical-black" alt="iphone-vertical-black" onclick="normalScreenVertical()">
-                        <img src="assets/iphone-horizontal.png" id="iphone-horizontal" alt="iphone-horizontal" onclick="blackScreenHorizontal()">
-                        <img src="assets/iphone-horizontal-black.png" class="iphone-horizontal-black" alt="iphone-horizontal-black" onclick="normalScreenHorizontal()"> 
+                    <div class="slide-1">
+                        <section class="phones">
+                            <img src="assets/iphone-vertical.png" id="iphone-vertical" alt="iphone-vertical" onclick="blackScreenVertical()" >
+                            <img src="assets/iphone-vertical-black.png" class="iphone-vertical-black" alt="iphone-vertical-black" onclick="normalScreenVertical()">
+                            <img src="assets/iphone-horizontal.png" id="iphone-horizontal" alt="iphone-horizontal" onclick="blackScreenHorizontal()">
+                            <img src="assets/iphone-horizontal-black.png" class="iphone-horizontal-black" alt="iphone-horizontal-black" onclick="normalScreenHorizontal()"> 
+                        </section>   
+                    </div>
+                    <div>
+                        <section id="slide-2"></section>
+                    </div>
+                    <div id="firstClone" class="slide-1">
+                        <section class="phones">
+                            <img src="assets/iphone-vertical.png" id="iphone-vertical" alt="iphone-vertical" onclick="blackScreenVertical()" >
+                            <img src="assets/iphone-vertical-black.png" class="iphone-vertical-black" alt="iphone-vertical-black" onclick="normalScreenVertical()">
+                            <img src="assets/iphone-horizontal.png" id="iphone-horizontal" alt="iphone-horizontal" onclick="blackScreenHorizontal()">
+                            <img src="assets/iphone-horizontal-black.png" class="iphone-horizontal-black" alt="iphone-horizontal-black" onclick="normalScreenHorizontal()"> 
+                        </section>    
                     </div>
                 </div>
                 <button id="move-left" class="arrow-left"></button>
@@ -58,14 +65,18 @@
                     <img src="assets/pen.png" alt="pen-logo">
                     <h3>Custom Design</h3>
                     <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                </article>
+                <article>               
                     <img src="assets/phone.png" alt="phone-logo">
                     <h3>Responsive Layout</h3>
                     <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae- sent elit leo.</p>
-                </article>
+                </article>   
                 <article>
                     <img src="assets/bulb.png" alt="bulb-logo">     
                     <h3>Innovative Ideas</h3>
                     <p>Quisque luctus, quam eget molestie com- modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                </article> 
+                <article>     
                     <img src="assets/bubble.png" alt="bubble-logo">
                     <h3>24/7 Support</h3>
                     <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen- tesque egestas venenatis lorem .</p>
@@ -74,6 +85,8 @@
                     <img src="assets/heart.png" alt="heart-logo">
                     <h3>Love is The Answer</h3>
                     <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                </article> 
+                <article>     
                     <img src="assets/star.png" alt="star-logo">
                     <h3>Feel Like A Star</h3>
                     <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
@@ -110,7 +123,7 @@
         <p class="description-about">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="employees">
             <figure>
-                <img src="assets/adam-jensen.png" alt="adam-jensen">
+                <img class="adam-jensen" src="assets/adam-jensen.png" alt="adam-jensen">
                 <figcaption>
                     <h2>Adam Jensen</h2>
                     <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
@@ -121,7 +134,7 @@
                 </figcaption>
             </figure>
             <figure>
-                <img src="assets/desmond-miles.png" alt="desmond-miles">
+                <img class="desmond-miles" src="assets/desmond-miles.png" alt="desmond-miles">
                 <figcaption>
                     <h2>Desmond Miles</h2>
                     <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
@@ -132,7 +145,7 @@
                 </figcaption>
             </figure>
             <figure>
-                <img src="assets/scolara-visari.png" alt="scolara-visari">
+                <img class="scolara-visari" src="assets/scolara-visari.png" alt="scolara-visari">
                 <figcaption>
                     <h2>Scolara Visari</h2>
                     <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
@@ -172,7 +185,8 @@
             </div>
             <aside  class="contactdata">
                 <h4>Contact Information</h4>
-                <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+                <p class="no-wrap">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+                <p class="wrap">Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
                 <figure>
                     <img src="assets/location.png" alt="location">
                     <figcaption>Elm St. 14/05 Lost City</figcaption>
@@ -190,7 +204,7 @@
     </section>
     <hr class="contact-line">
     <footer>
-        <span class="copyright">© Copyright 2013 · by PSDchat.com</span>
+        <span class="copyright">© Copyright 2013</span>
         <span class ="socials"> 
             <a href="https://www.facebook.com/SingoloOrchestra/"><img src="assets/facebook.png" alt="facebook"></a>
             <a href="https://www.optiflor.nl/en/product/singolo-collection"><img src="assets/google-plus.png" alt="google-plus"></a>
