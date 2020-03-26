@@ -6,6 +6,17 @@ NAVIGATION.addEventListener('click', (link)=> {
     link.target.classList.add('active');
 });
 
+/*burger-menu activation*/ 
+document.getElementById("burger").onclick = function() {
+    open()
+  };
+    function open() {
+    document.getElementById("burger").classList.toggle('rotate-90-cw');
+    document.getElementById("menu").classList.toggle("show");
+  }
+
+
+
 /*blackscreen by click*/ 
 
 function blackScreenVertical(){

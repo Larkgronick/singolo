@@ -29,6 +29,30 @@ button:focus {
 
 /*HEADER*/
 
+.menu{
+  display: none;
+
+}
+
+.burger{
+  display: none;
+
+}
+
+@keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+
+
+
 header{
   position: sticky;
   z-index: 3;
@@ -965,7 +989,440 @@ footer{
   
   }
   
+}
+
+/*PHONE*/
+
+@media screen and (max-width: 375px) {
+  body{
+    width: 375px;
+
+  }
+
+  /*HEADER*/
+
+  header{
+    height: 70px;
+
+  }
+  
+  nav, .header-line{
+    display: none;
+
+  }
+
+  .rotate-90-cw {
+    -webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  #home{
+    display: block;
+
+  }
+  .menu{
+    display: none;
+    padding-top: 90px;
+    height: 100vh;
+    width: 80vw;
+    background-color: #2d303a;
+
+  }
+
+  #burger{
+    display: inline-block;
+    margin: 21px 0px 0px 20px;
+    cursor: pointer;
+
+  }
+
+  #burger i{
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin-top: 6px;
+    background: white;
+
+  }
+
+  ul {
+    height: 100vh;
+    margin-top: 0px;
+
+  }
+  
+  li {
+    margin: 30px 0px 0px 60px;
+    list-style-type: none; 
+    
+  }
+
+  li a{
+    text-decoration: none;
+    color: white;
+
+  }
+
+  li a:hover{
+    color: #e36861;
+  
+  }
+
+  .show{
+    display: block;
+
+  }
+
+  h1{
+    margin-left: 100px;
+    font-size: 19px;
+  
+  }
+
+  .star{
+    font-size: 20px;
+  
+  }
+
+  /*SLIDER*/
+
+  .slider{
+    height: 214px;
+
+  }
+
+  .carousel-container{
+    height: 221px;
+    
+  }
+ 
+
+  #slide-2{
+    background: url("assets/slide-2-phone.png") no-repeat;
+
+  }
+
+  .arrow-right{ 
+    bottom: 325px;
+    left: 319px;
+  
+  }
+
+  .arrow-left{
+    bottom: 325px;
+    left: 12px;
+
+  }
+
+
+  #iphone-vertical{
+    width: 79.28px;
+    height: 168.1px;
+    top: 21px;
+    left: 42px;
+    box-shadow: 9px 9px 0px #ce5d56;
+    border-radius: 0px 11px 11px 11px;
+    
+  }
+  
+  .iphone-vertical-black{
+    width: 79.28px;
+    height: 168.1px;
+    top: 21px;
+    right: 42px;
+
+  }
+  
+  #iphone-horizontal{
+    width: 168.1px;
+    height: 79.28px;
+    right: 11px;
+    bottom: 22px;
+    box-shadow: 9px 9px 0px #ce5d56;
+    border-radius: 0px 11px 11px 11px;
+    
+  }
+  
+  .iphone-horizontal-black{
+    width: 168.1px;
+    height: 79.28px;
+    bottom: 22px;
+    left: -183px;
+
+  }
+
+  /*SERVICES*/
+
+  #services{
+    height: 1032px;
+
+  }
+  
+  .description{
+    width: 310px;
+    padding: 0px 0px 0px 32px;
+  
+  }
+
+  .description p{
+    margin-bottom: 24px;
+
+}
+
+  .description h3{
+    padding-top: 25px;
+  }
+
+  article h3{
+    font-size: 18px;
+
+  }
+
+  article p{
+    margin: 10.7px 2px 3px 0px;
+    width: 301px;
+    font-size: 12px;
+    line-height: 1.78;
+
+  }
+
+  .advantages {
+    margin-left: 10px;
+
+  }
   
 
+  /*PORTFOLIO*/
+
+  #portfolio{
+    height: 837px;
+    padding-left: 29px ;
+  
+  }
+  
+  #portfolio h3{ 
+    padding-top: 41px;
+
+   }
+  
+   #portfolio p{
+    width: 313px;
+    padding-bottom: 14px; 
+  
+   }
+  
+  
+  #design-select{
+    margin-bottom: 12px;
+
+  }
+  
+  .gallery{
+    height: 616px;
+    overflow: hidden;
+  
+  }
+  
+  .click{
+    width: 142px !important;
+    margin: 0px 8px 8px 0px;
+  
+  }
+
+  
+  #gallery img{
+    width: 151px;
+    padding: 0px 10px 11px 0px;
+
+  
+  }
+
+  #gallery > img:nth-child(9) {
+    display: none;
+  
+  }
+  
+  #gallery > img:nth-child(10) {
+    display: none;
+  
+  }
+
+  #gallery > img:nth-child(11) {
+    display: none;
+  
+  }
+  
+  #gallery > img:nth-child(12) {
+    display: none;
+  
+  }
+   
+  /*ABOUT*/
+
+     /*ABOUT US*/
+   
+   #about{
+    height: 662px;
+  
+  }
+  
+  #about h3{
+    padding-top: 52px; 
+
+  }
+  
+  .description-about{
+    padding-bottom: 39px;
+    width: 680px;
+ 
+  }
+
+  figure{
+    width: 218px;
+
+  }
+
+  .adam-jensen, .desmond-miles, .scolara-visari{
+    width: 219px;
+    height:  219px;
+  
+  }
+  
+  figcaption h2{
+    padding: 7px 0px 3px 0px;
+  
+  } 
+  
+  figcaption p{
+    width: 219px;
+    margin-bottom: 12px;
+    text-align: justify;
+    line-height: 21px;
+  
+  } 
+
+  /*ABOUT*/
+   
+   #about{
+    height: 1749px;
+    padding-left: 31px;
+  
+  }
+  
+  #about h3{
+    padding-top: 34px;
+
+  }
+  
+  .description-about{
+    padding: 18px 0px 25px 0px;
+    width: 310px;
+    letter-spacing: 0.26px;
+    line-height: 30px;
+ 
+  }
+
+  figure{
+    margin-bottom: 31px;
+
+  }
+
+  .employees{
+    width: 310px;
+    flex-wrap: wrap;
+
+  }
+
+  .adam-jensen, .desmond-miles, .scolara-visari{
+    width: 314px;
+    height:  314px;
+  
+  }
+  
+  figcaption h2{
+    padding: 12px 0px 3px 0px;
+  
+  } 
+  
+  figcaption p{
+    width: 313px;
+
+  } 
+
+  /*CONTACT*/
+
+  #contact{
+    height: 962px;
+    padding-left: 31px;
+  
+  }
+  
+  #contact h3{
+    padding-top: 44px;
+  
+  }
+
+  .contact-description{
+    width: 318px;
+    padding-bottom: 20px;
+  
+  }
+
+  form{
+    margin-bottom: 61px;
+
+  }
+
+ .feedback{
+   display: block;
+
+ }
+  
+  input, textarea{
+    width: 306px;
+
+  }
+   
+  #contact button{
+    margin-left: 110px;
+  
+  }
+  
+  #message-block{
+    top: 3923px;
+
+  }
+
+  #message{
+    width: 200px;
+    top: 40%;
+    left: 20%;
+    font-size: 16px;
+
+  }
+
+  aside p{
+    width: 314px;
+    line-height: 22.7px;
+
+  }
+
+
+  aside figure{
+    margin-bottom: 7px;
+
+  }
+
+  /*FOOTER*/
+
+  .copyright{
+    display: none;
+
+  }
+
+  .socials{
+    margin-left: 108px;
+
+  }
 
 }
