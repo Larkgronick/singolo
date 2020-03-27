@@ -7,15 +7,19 @@ NAVIGATION.addEventListener('click', (link)=> {
 });
 
 /*burger-menu activation*/ 
+
 document.getElementById("burger").onclick = function() {
     open()
   };
     function open() {
     document.getElementById("burger").classList.toggle('rotate-90-cw');
     document.getElementById("menu").classList.toggle("show");
+
   }
 
-
+  document.getElementById("menu").onclick = function() {
+    open()
+  };
 
 /*blackscreen by click*/ 
 
@@ -34,7 +38,6 @@ function blackScreenHorizontal(){
 function normalScreenHorizontal(){
     document.getElementById('iphone-horizontal').style.zIndex = "2"
 }
-
 
 /*corousel*/
 

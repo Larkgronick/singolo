@@ -50,9 +50,6 @@ button:focus {
   }
 }
 
-
-
-
 header{
   position: sticky;
   z-index: 3;
@@ -143,11 +140,9 @@ nav span{
 
 #slide-2{
   width: 1020px;
-  height: 591px;
+  height: 598px;
   background: url("assets/slide-2.png");
 }
-
-
 
 #move-left{
   position: relative;
@@ -199,9 +194,8 @@ nav span{
   bottom: 288px;
   left: 425px;
   z-index: 1;
+
 }
-
-
 
 .arrow-right, .arrow-left {
   width: 20px;
@@ -403,7 +397,7 @@ article p{
 
 }
 
- /*ABOUT US*/
+/*ABOUT US*/
 
 #about{
   height: 729px;
@@ -543,7 +537,6 @@ textarea{
   
 }
 
-
 #contact button{
   width: 90px;
   height: 34px;
@@ -639,7 +632,7 @@ aside figcaption{
   background-color: #ea676b;
   border: none;
 
- }
+}
 
 /*FOOTER*/
 
@@ -699,12 +692,14 @@ footer{
 
   header{
     height: 88px;
+
   }
   
   nav{
     margin: 32px 39px 0px 0px;
   
   }
+
   nav span{
     margin-left: 10px;
     margin-right: 10px;
@@ -715,14 +710,16 @@ footer{
 
   .slider{
     height: 443px;
+
   }
 
   .carousel-slide div {
-    height: 423px;
+    height: 426px;
+
   }
 
   #slide-2{
-    background: url("assets/slide-2-tablet.png");
+    background: url("assets/slide-2-tablet.png") no-repeat;
 
   }
 
@@ -737,7 +734,6 @@ footer{
     left: 32px;
 
   }
-
 
   #iphone-vertical{
     width: 162.36px;
@@ -777,7 +773,6 @@ footer{
   /*SERVICES*/
 
   #services{
-
     height: 677px;
 
   }
@@ -797,10 +792,9 @@ footer{
   article{
     margin: 0px 33px  21px 21px;
  
-  
   }
   
-   /*PORTFOLIO*/
+  /*PORTFOLIO*/
 
   #portfolio{
     height: 1093px;
@@ -811,15 +805,15 @@ footer{
     font-size: 31px;
     padding-bottom: 18px;
 
-   }
+  }
   
-   #portfolio p{
+  #portfolio p{
     width: 660px;
     letter-spacing: 0.3px;
     line-height: 30px;
     padding-bottom: 9px; 
-  
-   }
+ 
+  }
   
   #design-select button{
     margin-bottom: 10px;
@@ -839,14 +833,13 @@ footer{
   
   }
 
-   
   #gallery img{
     width: 215px;
     padding-bottom: 1px;
   
   }
 
-   /*ABOUT US*/
+  /*ABOUT US*/
    
    #about{
     height: 662px;
@@ -939,7 +932,6 @@ footer{
 
   }
   
- 
   .no-wrap{
     display: block;
     
@@ -961,7 +953,6 @@ footer{
 
   }
 
-
   aside p{
     width: 218px;
     text-align: justify;
@@ -970,13 +961,12 @@ footer{
   
   }
 
-
   aside figcaption{
     padding-left: 7px;
 
   }
  
-    /*FOOTER*/
+  /*FOOTER*/
 
   .copyright{
     margin: 31px 0px 0px 40px;
@@ -1005,7 +995,7 @@ footer{
     height: 70px;
 
   }
-  
+ 
   nav, .header-line{
     display: none;
 
@@ -1020,9 +1010,18 @@ footer{
     display: block;
 
   }
+
+  h1{
+    position: absolute;
+    top: -6px;
+    right: 211px;
+    z-index: 1;
+
+  }
+
   .menu{
     display: none;
-    padding-top: 90px;
+    padding-top: 150px;
     height: 100vh;
     width: 80vw;
     background-color: #2d303a;
@@ -1031,7 +1030,7 @@ footer{
 
   #burger{
     display: inline-block;
-    margin: 21px 0px 0px 20px;
+    margin: 24px 0px 0px 23px;
     cursor: pointer;
 
   }
@@ -1045,14 +1044,15 @@ footer{
 
   }
 
-  ul {
+  ul{
     height: 100vh;
     margin-top: 0px;
 
   }
   
-  li {
-    margin: 30px 0px 0px 60px;
+  li{
+    margin: 30px 0px 0px 72px;
+    font-size: 23px;
     list-style-type: none; 
     
   }
@@ -1114,7 +1114,6 @@ footer{
 
   }
 
-
   #iphone-vertical{
     width: 79.28px;
     height: 168.1px;
@@ -1167,7 +1166,7 @@ footer{
   .description p{
     margin-bottom: 24px;
 
-}
+  }
 
   .description h3{
     padding-top: 25px;
@@ -1191,7 +1190,6 @@ footer{
 
   }
   
-
   /*PORTFOLIO*/
 
   #portfolio{
@@ -1203,14 +1201,13 @@ footer{
   #portfolio h3{ 
     padding-top: 41px;
 
-   }
+  }
   
    #portfolio p{
     width: 313px;
     padding-bottom: 14px; 
   
-   }
-  
+  }
   
   #design-select{
     margin-bottom: 12px;
@@ -1234,7 +1231,6 @@ footer{
     width: 151px;
     padding: 0px 10px 11px 0px;
 
-  
   }
 
   #gallery > img:nth-child(9) {
@@ -1259,9 +1255,7 @@ footer{
    
   /*ABOUT*/
 
-     /*ABOUT US*/
-   
-   #about{
+  #about{
     height: 662px;
   
   }
@@ -1303,7 +1297,7 @@ footer{
 
   /*ABOUT*/
    
-   #about{
+  #about{
     height: 1749px;
     padding-left: 31px;
   
@@ -1376,7 +1370,7 @@ footer{
  .feedback{
    display: block;
 
- }
+  }
   
   input, textarea{
     width: 306px;
@@ -1406,7 +1400,6 @@ footer{
     line-height: 22.7px;
 
   }
-
 
   aside figure{
     margin-bottom: 7px;
